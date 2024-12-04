@@ -1,0 +1,32 @@
+{
+  "name": "api-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "test-web": "mocha tests/test-web.test.js",
+    "test-git": "mocha tests/github.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.12",
+    "@joi/date": "^2.1.1",
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "dotenv": "^16.4.5",
+    "ioredis": "^5.4.1",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mocha": "^10.8.2",
+    "mongoose": "^8.8.0",
+    "winston": "^3.16.0"
+  },
+  "devDependencies": {
+    "nock": "^13.5.5"
+  }
+}
