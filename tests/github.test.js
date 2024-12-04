@@ -6,10 +6,10 @@ const axios = require("axios");
 const { searchRepositories, getContributors } = require("../utility/githubApi");
 
 describe("GitHub API Utility Functions", () => {
-  const token = "token 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"; // Replace with your actual token for testing
+  const token = process.env.TOKEN;
 
   beforeEach(() => {
-    process.env.TOKEN = token; // Set the environment variable for the token
+    token = process.env.TOKEN;
   });
 
   afterEach(() => {
